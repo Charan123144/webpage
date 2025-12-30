@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fashion Vibe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff4ecd, #6a5cff);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.collection {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card, .form-card {
+  background: white;
+  color: #333;
+  width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background: linear-gradient(135deg, #ff4ecd, #6a5cff);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Fashion Vibe</h1>
+  <p>Bold • Trendy • Unique Clothing Designs</p>
+</header>
+
+<section class="collection">
+  <div class="form-card">
+    <h3>Your Style Details</h3>
+
+    <form onsubmit="goNext(event)">
+      <input type="text" placeholder="Enter your name" required>
+      <select required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <select required>
+        <option value="">Your Choice</option>
+        <option>Street Wear</option>
+        <option>Casual Chic</option>
+        <option>Luxury Fit</option>
+      </select>
+      <button type="button" onclick="window.location.href='about.html'">
+  Submit
+</button>
+    
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2025 <b>CherryFashionova</b>
+</footer>
+
+<script>
+function goNext(event) {
+  event.preventDefault();
+  window.location.href = "about.html";
+}
+</script>
+
+</body>
+</html>

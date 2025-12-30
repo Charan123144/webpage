@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About CherryFashionova</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a5cff, #ff4ecd);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  color: #333;
+  max-width: 700px;
+  margin: 70px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #ff4ecd;
+}
+
+.quote {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #6a5cff;
+}
+
+.fashion-box {
+  margin-top: 35px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff4ecd, #6a5cff);
+  color: white;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fashion-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Hello, I'm Charan</h1>
+
+  <p>
+    I’m here to design and tailor outfits that fit you perfectly and match your personality.
+    This platform is built with one goal in mind — <b>complete client satisfaction</b>.
+  </p>
+
+  <p>
+    When people feel confident and comfortable in what they wear, it naturally builds trust,
+    popularity, and reach. That’s what CherryFashionova stands for.
+    Feel free to explore styles that match your needs and your fit.
+  </p>
+
+  <div class="quote">
+    “True style isn’t about forcing yourself into trends —
+    it’s about turning comfort into confidence.”
+  </div>
+
+  <!-- CLICKABLE BOX -->
+  <div class="fashion-box" onclick="goFashion()">
+    Click here to know your fashion
+  </div>
+</div>
+
+<footer>
+  © 2025 <b>CherryFashionova</b>
+</footer>
+
+<script>
+function goFashion() {
+  window.location.href = "fashion.html";
+}
+</script>
+
+</body>
+</html>
